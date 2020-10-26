@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #141414;
+}
+@font-face{
+    font-family: "Bebas";
+    src: url(../fonts/bebas-neue.ttf);
+}
+@font-face{
+    font-family: "Godzilla";
+    src: url(../fonts/Godzilla.ttf);
+}
+@font-face{
+    font-family: "Bebas2";
+    src: url(../fonts/BebasNeuelight.otf);
+}
+/* Classes Auxiliares */
+.center{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.clear{clear:both;}
+
+/* Estilização */
+
+header{
+    padding-top:23px;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:999;
+}
+
+/* Menu 1 HEADER */
+.header-left{
+    float:left;
+}
+.header-left img{
+    max-width: 90px;
+}
+.menu-header{
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+    top: -10px;
+}
+.menu-header li{
+    display: inline-block;
+    margin: 0 12px;
+}
+.menu-header ul{
+    list-style-type: none;
+}
+.menu-header a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    
+}
+.menu-header a:hover{
+    transition: 0.3s ease-out;
+    color: rgba(139, 139, 139, 0.815);
+}
+.search i:hover{
+    transition: 0.3s ease-out;
+    color: rgba(139, 139, 139, 0.815);
+}
+/* Header-Right */
+
+.header-right{
+    float: right;
+}
+.header-right i:nth-child(4){
+    display:none;
+}
+.search i{
+    position: relative;
+    top: -25px;
+    font-size: 20px;
+    color: white;
+    margin: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Destaques */
+
+section.destaque > .center{
+    max-width: 960px;
+}
+.textnet{
+    position: absolute;
+    top: 400px;
+    left: 60px;
+}
+.textnet h2{
+    position: relative;
+    z-index:4;
+    margin-bottom: 20px;
+    font-size: 80px;
+    color: red;
+    letter-spacing: 11px;
+    font-weight: normal;
+    font-family: Godzilla;
+}
+
+button.play{
+    font-size: 15px;
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+    margin-right: 10px;
+    cursor: pointer;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    padding: 12px 35px; 
+    border:0;
+    border-radius: 6px;
+}
+button.info{
+    font-size: 15px;
+    font-weight: bold;
+    left: 160px;
+    position: absolute;
+    z-index:3;
+    cursor: pointer;
+    font-family: 'Heebo', sans-serif;
+    padding: 12px 35px; 
+    border:0;
+    border-radius: 6px;
+    color: white;
+    background: rgba(88, 88, 88, 0.712);
+}
+button.info:hover{
+    transition: 0.4s ease-out;
+    background: rgba(46, 46, 46, 0.829);
+}
+button.play:hover{
+    transition: 0.4s ease-out;
+    background: rgba(156, 156, 156, 0.849);;
+}
+button i{
+    font-size: 16px;
+    margin-right: 10px;
+}
+/* Vitrine */
+
+section.vitrine{
+    padding: 20px 0;
+    position: relative;
+    top: -30px;
+}
+section.vitrine .vitrine-flex1{ 
+    position: relative;
+    top: -60px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 96%;
+    margin-left:4%;
+}
+.vitrinebs img{
+    cursor: pointer;
+    width: 99%;
+}
+.vitrinebs{
+    border-radius: 3px;
+    transition: 1s;
+    background-position: center;
+}
+.vitrinebs:hover{
+    transform:scale(1.5,1.5);
+}
+.vitrine-flex2{
+    position: relative;
+    top: -35px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 96%;
+    margin-left: 4%;
+}
+.vitrine-flex2 img{
+    width: 99%;
+}
+.vitrine .titlee > h2{
+    position: relative;
+    top: -60px;
+    margin-left: 52px;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    font-size: 18px;
+    
+}
+.titlefilm{
+    position: relative;
+    top: -35px;
+    color: white;
+    margin-left: 55px;
+    font-size: 12px;
+    font-family: 'Heebo', sans-serif;
+    margin-bottom: 8px;
+}
+
+/* Super */
+div.overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    background:rgba(0, 0, 0, 0.753);
+    z-index:2;
+    width: 100%;
+    height: 100%;
+}
+
+section.super{
+    min-height: 450px;
+    position: relative;
+    z-index:1;
+    background-image: url(../images/sss.jpg);
+    background-position: top;
+    background-size: cover;
+}
+div.vv{
+    position: relative;
+    z-index: 3;
+    float: left;
+    width: 60%;
+}
+div.vv img{
+    margin-top: 40px;
+    margin-left:22px;
+    border-radius: 5px;
+    max-width: 700px;
+    width: 90%;
+}
+div.textv{
+    height: 100px;
+    float: right;
+    position: relative;
+    margin-top: 20px;
+    z-index: 3;
+    width: 40%;
+}
+.textv img{
+  
+    width: 72%;
+}
+div.textv p{
+    font-family: 'Heebo', sans-serif;
+    color: white;
+}
+div.textv h3{
+    font-family: 'Heebo', sans-serif;
+    color: white;
+    font-size: 23px;
+    margin-top: 20px;
+}
+button.play1{
+    margin-top: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    cursor: pointer;
+    font-family: 'Heebo', sans-serif;
+    padding: 12px 35px; 
+    border:0;
+    border-radius: 6px;
+}
+button.info1{
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: 'Heebo', sans-serif;
+    padding: 12px 35px; 
+    border:0;
+    border-radius: 6px;
+    color: white;
+    background: rgba(88, 88, 88, 0.712);
+}
+button.info1:hover{
+    transition: 0.4s ease-out;
+    background: rgba(46, 46, 46, 0.829);
+}
+button.play1:hover{
+    transition: 0.4s ease-out;
+    background: rgba(156, 156, 156, 0.849);;
+}
+
+/* Vitrine 2 */
+.vitrine-flex2 img{
+    border-radius: 5px;
+}
+.vitrine-flex1 img{
+    border-radius: 5px;
+}
+.vitrine-flex11 img{
+    border-radius: 5px;
+}
+.vitrine-flex21 img{
+    border-radius: 5px;
+}
+
+section.vitrine1{
+    padding: 20px 0;
+    /* background:rgb(0, 0, 0); */
+    position: relative;
+    top: -30px;
+}
+section.vitrine1 .vitrine-flex11{ 
+    /* position: relative;
+    top: -60px; */
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 96%;
+    margin-left:4%;
+}
+.vitrine-flex11{
+    margin-bottom: 20px;
+}
+.vitrinebs img{
+    cursor: pointer;
+    width: 99%;
+}
+.vitrinebs{
+    border-radius: 3px;
+    transition: 1s;
+    /* width: 25%; */
+    /* padding-top: 10%; */
+    background-position: center;
+}
+.vitrinebs:hover{
+    transform:scale(1.5,1.5);
+}
+.vitrine-flex21{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 96%;
+    margin-left: 4%;
+}
+.vitrine-flex21 img{
+    width: 99%;
+}
+.titlee1 > h2{
+    position: relative;
+    top: 22px;
+    margin-left: 52px;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    font-size: 18px;
+    
+}
+.titlefilm1{
+    position: relative;
+    top: 10px;
+    color: white;
+    margin-left: 50px;
+    font-size: 12px;
+    font-family: 'Heebo', sans-serif;
+    margin-bottom: 8px;
+}
+
+/* Catalogo1 */
+@media screen and (max-width: 1100px){
+    .textnet{
+        position: absolute;
+        top: 280px;
+        left: 30px;
+    }
+    .textnet h2{
+        font-size:50px;
+    }
+    button.play{
+        position: absolute;
+        z-index: 3;
+        cursor: pointer;
+        margin-right: 10px;
+        cursor: pointer;
+        font-family: Bebas;
+        padding: 6px 15px; 
+        border:0;
+        border-radius: 3px;
+    }
+    button.info{
+        left: 100px;
+        position: absolute;
+        z-index:3;
+        cursor: pointer;
+        font-family: Bebas;
+        padding: 6px 15px; 
+        border:0;
+        border-radius: 3px;
+        color: white;
+        background: rgba(37, 37, 37, 0.671);
+    }
+
+}
+@media screen and (max-width: 768px){
+    header{
+        padding-top: 20px;
+        position:fixed;
+        top:0;
+        width:100%;
+        z-index:999;
+    }
+    .header-left{
+        margin-left: 20px;
+    }
+    header > .center{
+        margin-top: 20px;
+    }
+    .header-right{
+       float: right;
+       padding: 0 10px;
+    }
+    .header-right i:nth-child(4){
+        display: inline-block;
+       
+    }
+    div.search > i{
+        display:inline-block;
+    }
+    
+    section.vitrine1{
+        position: relative;
+        top: -20px;
+        bottom: -30px;
+    }
+    section.vitrine{
+        position: relative;
+        top: 25px;
+        padding: 10px 0;
+    }
+    div.textv{
+        width: 100%;
+        float: none;
+        position: absolute;
+        top: 120px;
+        text-align: center;
+    }
+    div.textv > img{
+        width: 60%;
+        margin-top: 15px;
+    }
+    section.super{
+        padding: 20px 0;
+        float: none;
+        z-index:1;
+        background-image: url(../images/sss.jpg);
+        min-height: 500px;
+    }
+    div.vv{
+        top: -35px;
+        width: 100%;
+    }
+    
+    section.vitrine{
+        margin-top: 30px;
+    }
+    .textnet{
+        position: absolute;
+        top: 230px;
+        left: 30px;
+    }
+    .textnet h2{
+        font-size:50px;
+    }
+    button.play{
+        position: absolute;
+        z-index: 3;
+        cursor: pointer;
+        margin-right: 10px;
+        cursor: pointer;
+        font-family: Bebas;
+        padding: 6px 15px; 
+        border:0;
+        border-radius: 3px;
+    }
+    button.info{
+        left: 100px;
+        position: absolute;
+        z-index:3;
+        cursor: pointer;
+        font-family: Bebas;
+        padding: 6px 15px; 
+        border:0;
+        border-radius: 3px;
+        color: white;
+        background: rgba(37, 37, 37, 0.671);
+    }
+    .menu-header{
+        display: none;
+    }
+    .header-right i{
+        position: relative;
+        top: -32px;
+        font-size: 10px;
+        color: white;
+        display: block;
+        /* display:none; */
+    }
+    .header-left img{
+        width: 50%;
+        position: relative;
+        top: -10px;
+        /* background: rgba(0, 0, 0, 0.842);
+        position: relative;
+        padding: 15px 0; */
+    }
+    /* .header-left{
+        position: relative;
+        top:5px;
+    } */
+}
+@media screen and (max-width: 650px){
+    .textnet{
+        position: absolute;
+        top: 150px;
+        left: 30px;
+    }
+    .textnet h2{
+        font-size:50px;
+    }
+    button.play{
+        position: absolute;
+        z-index: 3;
+        cursor: pointer;
+        margin-right: 10px;
+        cursor: pointer;
+        font-family: Bebas;
+        padding: 6px 15px; 
+        border:0;
+        border-radius: 3px;
+    }
+    button.info{
+        left: 100px;
+        position: absolute;
+        z-index:3;
+        cursor: pointer;
+        font-family: Bebas;
+        padding: 6px 15px; 
+        border:0;
+        border-radius: 3px;
+        color: white;
+        background: rgba(37, 37, 37, 0.671);
+    }
+}
+
+@media screen and (max-width: 540px){
+    .textnet{
+        position: absolute;
+        top: 180px;
+        left: 30px;
+    }
+    .textnet h2{
+        font-size:30px;
+    }
+    button.play{
+        position: absolute;
+        z-index: 3;
+        cursor: pointer;
+        margin-right: 10px;
+        cursor: pointer;
+        font-family: Bebas;
+        padding: 3px 7px; 
+        border:0;
+        border-radius: 3px;
+    }
+    button.info{
+        left: 80px;
+        position: absolute;
+        z-index:3;
+        cursor: pointer;
+        font-family: Bebas;
+        padding: 3px 7px; 
+        border:0;
+        border-radius: 3px;
+        color: white;
+        background: rgba(37, 37, 37, 0.671);
+    }
+    
+}
+@media screen and (max-width: 420px){
+    .textnet{
+        position: absolute;
+        top: 100px;
+        left: 30px;
+    }
+    .textnet h2{
+        font-size:30px;
+    }
+    button.play{
+        position: absolute;
+        z-index: 3;
+        cursor: pointer;
+        margin-right: 10px;
+        cursor: pointer;
+        font-family: Bebas;
+        padding: 3px 7px; 
+        border:0;
+        border-radius: 3px;
+    }
+    button.info{
+        left: 80px;
+        position: absolute;
+        z-index:3;
+        cursor: pointer;
+        font-family: Bebas;
+        padding: 3px 7px; 
+        border:0;
+        border-radius: 3px;
+        color: white;
+        background: rgba(37, 37, 37, 0.671);
+    }
+}
